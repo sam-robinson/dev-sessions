@@ -12,6 +12,8 @@ update .storybook/preview.js to include nrcs-design-system scss
 
 add "experimentalDecorators" to tsconfig.json
 
+add .env with SKIP_PREFLIGHT_CHECK=true, because the latest version of StoryBook uses a later version of babel-loader than what react-scripts expect
+
 ## Local yarn setup
 
 ```
@@ -29,12 +31,15 @@ add .prettierrc
 add .vscode/settings.json
 
 ## Cleanup
-delete everyting under source except 
+
+delete everyting under source except
+
 - index.tsx
 - react-app-env.d.ts
 - setupTests.ts
 
 delete everything under public except:
+
 - index.html
 
 rewrite index.tsx to just render a div
