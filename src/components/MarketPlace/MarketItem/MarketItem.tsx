@@ -1,21 +1,21 @@
 import React from "react";
 import { Checkbox } from "nrcs-design-system";
-import { IMarketItemVM } from "./MarketItemVM";
+import { MarketItemVM } from "./MarketItemVM";
 import { observer } from "mobx-react";
 
 export interface IMarketItemProps {
-	viewModel: IMarketItemVM;
+	viewModel: MarketItemVM;
 }
 
-const MarketItemComponent = ({ viewModel }: IMarketItemProps) => (
-	<div>
+const MarketItemComponent = ({ viewModel }: IMarketItemProps) => {
+	return (
 		<Checkbox
-			id={`marketitem-${viewModel.id}`}
-			label={viewModel.label}
+			id="market-item-1"
+			label="test-item-1"
 			checked={viewModel.checked}
 			onChange={viewModel.handleChange}
 		/>
-	</div>
-);
+	);
+};
 
 export const MarketItem = observer(MarketItemComponent);

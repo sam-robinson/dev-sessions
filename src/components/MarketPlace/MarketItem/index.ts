@@ -1,2 +1,2 @@
-export * from "./MarketItem";
-export * from "./MarketItemVM";
+export { MarketItem } from "./MarketItem";
+export { MarketItemVM } from "./MarketItemVM";

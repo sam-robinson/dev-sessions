@@ -9,7 +9,7 @@ export default {
 } as Meta;
 
 const Template: Story = () => {
-	const viewModel = new MarketItemVM("item1", "Item 1");
+	const viewModel = new MarketItemVM();
 	return <MarketItem viewModel={viewModel} />;
 };
 

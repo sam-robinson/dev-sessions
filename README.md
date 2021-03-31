@@ -43,3 +43,7 @@ delete everything under public except:
 - index.html
 
 rewrite index.tsx to just render a div
+
+## Testing Library Links
+
+https://testing-library.com/docs/react-testing-library/intro
